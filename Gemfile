@@ -4,6 +4,7 @@ gem "nokogiri", "~> 1.5.5"
 gem "colorize", "~> 0.5.8"
 gem "anemone", "~> 0.7.2"
 gem "trollop", "~> 2.0"
+gem "nokogiri-styles", "~> 0.1.2"
 
 group(:test, :development) do
   gem "rspec", "~> 2.11.0"

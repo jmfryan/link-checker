@@ -17,13 +17,13 @@ describe LinkChecker do
     it "finds all of the external links in an HTML file." do
       links = LinkChecker.external_link_uri_strings(
         open('spec/test-site/public/blog/2012/10/07/some-good-links/index.html'))
-      links.size.should == 4
+      links.size.should == 6
     end
 
     it "finds all of the external links in a string." do
       links = LinkChecker.external_link_uri_strings(
         open('spec/test-site/public/blog/2012/10/07/some-good-links/index.html').read)
-      links.size.should == 4
+      links.size.should == 6
     end
 
   end
